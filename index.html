@@ -1,1 +1,49 @@
-
+<!doctype html>
+<!--
+  文件功能 / Purpose:
+  用于 OpenReview 身份核验的公开学术个人主页，清晰展示姓名、学校、院系、身份、研究方向和学校邮箱。
+  页面采用单文件静态结构，不依赖 JavaScript、字体 CDN 或第三方资源，并兼容桌面和手机。
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic homepage of Shengxuan Xu, a master's student at Tsinghua University.">
+  <title>Shengxuan Xu | Tsinghua University</title>
+  <style>
+    :root { color-scheme:light; --ink:#172033; --muted:#5f6878; --accent:#6f2c91; --line:#e5e8ee; --paper:#fff; --wash:#f5f7fb; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; font-family:Georgia,"Times New Roman",serif; color:var(--ink); background:var(--wash); line-height:1.65; }
+    main { width:min(760px,calc(100% - 32px)); margin:64px auto; padding:56px 64px; background:var(--paper); border-top:5px solid var(--accent); box-shadow:0 12px 36px rgba(23,32,51,.08); }
+    h1 { margin:0; font-size:clamp(2.2rem,6vw,3.6rem); font-weight:500; line-height:1.1; letter-spacing:-.03em; }
+    .chinese-name { margin-left:.3em; color:var(--muted); font-family:"Microsoft YaHei","PingFang SC",sans-serif; font-size:.48em; font-weight:400; vertical-align:middle; }
+    .role { margin:18px 0 0; color:var(--accent); font-family:Arial,Helvetica,sans-serif; font-size:1.05rem; font-weight:600; letter-spacing:.02em; }
+    .affiliation { margin:8px 0 0; color:var(--muted); font-family:Arial,Helvetica,sans-serif; }
+    section { margin-top:42px; padding-top:30px; border-top:1px solid var(--line); }
+    h2 { margin:0 0 12px; font-family:Arial,Helvetica,sans-serif; font-size:.82rem; letter-spacing:.14em; text-transform:uppercase; }
+    p { margin:0; }
+    a { color:var(--accent); text-decoration-thickness:1px; text-underline-offset:3px; }
+    .links { display:flex; flex-wrap:wrap; gap:10px 24px; font-family:Arial,Helvetica,sans-serif; font-size:.95rem; }
+    footer { margin-top:48px; color:var(--muted); font-family:Arial,Helvetica,sans-serif; font-size:.82rem; }
+    @media (max-width:600px) { main { margin:20px auto; padding:36px 28px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Shengxuan Xu <span class="chinese-name" lang="zh-CN">徐圣轩</span></h1>
+      <p class="role">Master&rsquo;s Student</p>
+      <p class="affiliation">Data Science and Information Technology<br>Tsinghua Shenzhen International Graduate School<br>Tsinghua University</p>
+    </header>
+    <section aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>I am a master&rsquo;s student at Tsinghua Shenzhen International Graduate School, Tsinghua University. My research interests are in artificial intelligence.</p>
+    </section>
+    <section aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <div class="links"><a href="mailto:xsx26@mails.tsinghua.edu.cn">xsx26@mails.tsinghua.edu.cn</a><a href="https://github.com/hhsshh22">GitHub</a></div>
+    </section>
+    <footer>Last updated: September 2026</footer>
+  </main>
+</body>
+</html>
